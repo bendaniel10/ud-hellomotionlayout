@@ -6,7 +6,7 @@
         android:id="@+id/transition"
         motion:constraintSetStart="@id/start"
         motion:constraintSetEnd="@id/end"
-        >
+        motion:duration="3000">
         <OnClick motion:targetId="@id/animatingImage"
             motion:clickAction="transitionToEnd"
             />
@@ -22,6 +22,7 @@
     android:layout_height="150dp"
     motion:layout_constraintStart_toStartOf="parent"
     motion:layout_constraintTop_toTopOf="parent"
+    motion:pathMotionArc="startHorizontal"
     />
 </ConstraintSet>
 
@@ -31,9 +32,8 @@
         >
         <Constraint
             android:id="@id/animatingImage"
-            android:layout_width="300dp"
-            android:layout_height="200dp"
-            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="150dp"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintBottom_toBottomOf="parent"
             />
