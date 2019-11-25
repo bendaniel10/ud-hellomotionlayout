@@ -23,7 +23,11 @@
     motion:layout_constraintStart_toStartOf="parent"
     motion:layout_constraintTop_toTopOf="parent"
     motion:pathMotionArc="startHorizontal"
-    />
+    >
+    <CustomAttribute
+        motion:attributeName="crossfade"
+        motion:customFloatValue="0" />
+</Constraint>
 </ConstraintSet>
 
 
@@ -36,6 +40,10 @@
             android:layout_height="150dp"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintBottom_toBottomOf="parent"
-            />
+            android:rotation="180" >
+            <CustomAttribute
+                motion:attributeName="crossfade"
+                motion:customFloatValue="1" />
+        </Constraint>
     </ConstraintSet>
 </MotionScene>
