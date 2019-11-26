@@ -10,6 +10,24 @@
 
         <OnSwipe motion:touchAnchorId="@id/animatingImage"
             motion:dragDirection="dragRight" />
+        <KeyFrameSet >
+            <KeyPosition
+                motion:motionTarget="@+id/animatingImage"
+                motion:framePosition="30"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="-0.347"
+                motion:percentY="0.443" />
+            <KeyPosition
+                motion:motionTarget="@+id/animatingImage"
+                motion:framePosition="59"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="0.9"
+                motion:percentY="0.1" />
+            <KeyAttribute
+                motion:motionTarget="@+id/animatingImage"
+                motion:framePosition="60"
+                android:rotation="180" />
+        </KeyFrameSet>
     </Transition>
 
 <ConstraintSet
