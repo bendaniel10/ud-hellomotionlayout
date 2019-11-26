@@ -11,8 +11,8 @@
         <KeyFrameSet>
             <KeyPosition motion:motionTarget="@id/animatingImage"
                 motion:framePosition="20"
-                motion:percentX="0.8"
-                motion:percentY="0.1"
+                motion:percentX="1.101"
+                motion:percentY="0.078"
                 motion:keyPositionType="parentRelative"
                 />
             <KeyPosition
@@ -25,10 +25,17 @@
                 motion:motionTarget="@+id/animatingImage"
                 motion:framePosition="50"
                 android:rotation="360" />
+            <KeyPosition
+                motion:motionTarget="@+id/animatingImage"
+                motion:framePosition="48"
+                motion:keyPositionType="parentRelative"
+                motion:percentX="-0.355"
+                motion:percentY="0.492" />
         </KeyFrameSet>
         <OnSwipe motion:touchAnchorId="@id/animatingImage"
             motion:dragDirection="dragRight" />
         <KeyFrameSet />
+        <OnClick motion:targetId="@+id/animatingImage" />
     </Transition>
 
 <ConstraintSet
